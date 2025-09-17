@@ -116,7 +116,7 @@
         <div class="col-12 text-center mt-40">
           <p class="font-weight-bold color-white mb-0">
             Feel free to contact us, or you can call us any time
-            <a href="tel:(002) 01061245741" class="color-white-hover">(002) 01061245741</a>
+            <a href="tel:01637891095" class="color-white-hover">01637891095</a>
           </p>
         </div>
       </div>

@@ -137,7 +137,7 @@ onMounted(() => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         if (entry.target === counter1.value) {
-          animateCounter(counter1.value, 6154, 2000);
+          animateCounter(counter1.value, 200, 2000);
         }
         if (entry.target === counter2.value) {
           animateCounter(counter2.value, 6154, 2500);
