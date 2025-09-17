@@ -6,8 +6,8 @@
         <nav class="navbar navbar-expand-lg sticky-navbar">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="@/assets/images/logo/infinia-logo-Custom-Update.png" class="logo-light" alt="logo">
-                    <img src="@/assets/images/logo/infinia-logo-Custom-Update.png" class="logo-dark" alt="logo">
+                    <!-- <img src="@/assets/images/logo/infinia-logo-Custom-Update.png" class="logo-light" alt="logo"> -->
+                    <img src="@/assets/images/logo/infiniatech-dark-logo.svg" class="logo-dark" alt="logo">
                 </a>
                 <button class="navbar-toggler" type="button">
                     <span class="menu-lines"><span></span></span>
@@ -46,23 +46,10 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav__item has-dropdown">
                             <!-- <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Home</a> -->
-                            <router-link to="/" data-toggle="dropdown" class="dropdown-toggle nav__item-link active">
+                            <a herf="/" @click.prevent="goReload('/')" data-toggle="dropdown" class="dropdown-toggle nav__item-link active">
                                 Home
-                            </router-link>
-                            <ul class="dropdown-menu">
-                                <li class="nav__item">
-                                    <a href="index.html" class="nav__item-link">Home Main</a>
-                                </li>
-                                <!-- /.nav-item -->
-                                <li class="nav__item">
-                                    <a href="home-modern.html" class="nav__item-link">Home Modern</a>
-                                </li>
-                                <!-- /.nav-item -->
-                                <li class="nav__item">
-                                    <a href="home-classic.html" class="nav__item-link">Home Classic</a>
-                                </li>
-                                <!-- /.nav-item -->
-                            </ul>
+                            </a>
+                           
                             <!-- /.dropdown-menu -->
                         </li>
                         <!-- /.nav-item -->
@@ -266,9 +253,9 @@
 </template>
 
 <script setup>
-defineProps({
-    msg: String
-})
+function goReload(path) {
+  window.location.href = path // hard reload
+}
 </script>
 
 

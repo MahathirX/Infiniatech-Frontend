@@ -59,7 +59,7 @@ router.afterEach(() => {
   nextTick(() => {
     setTimeout(() => {
       loadPlugins()
-    }, 100) // DOM ready হওয়া পর্যন্ত wait
+    }, 100) // DOM ready 
   })
 })
 

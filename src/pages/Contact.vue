@@ -229,7 +229,7 @@ export default {
         }
     }
 }
-</script>>
+</script>
 
 <style scoped>
 .btn__primary {

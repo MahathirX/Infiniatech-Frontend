@@ -1,149 +1,157 @@
 <template>
-    <section class="contact-layout2 py-0">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="contact-panel d-flex flex-wrap">
-                <div
-                  class="stats-banner contact-panel__info d-flex flex-column justify-content-between"
-                >
-                  <div class="bg-img">
-                    <img src="@/assets/images/backgrounds/1.jpg" alt="banner" />
-                  </div>
-                  <div
-                    class="slick-carousel carousel-dots-light counters-light mb-40"
-                    data-slick='{"slidesToShow": 1, "arrows": false, "dots": true, "speed": 700}'
-                  >
-                    <div class="counter-item">
-                      <h4 class="counter color-white">6,154</h4>
-                      <p class="counter__desc">
-                        Projects And Software Developed in 2021
-                      </p>
-                    </div>
-                    <!-- /.counter-item -->
-                    <div class="counter-item">
-                      <h4 class="counter color-white">6,154</h4>
-                      <p class="counter__desc">
-                        Projects And Software Developed in 2021
-                      </p>
-                    </div>
-                    <!-- /.counter-item -->
-                  </div>
-                  <!-- /.slick-carousel -->
-                  <div>
-                    <h4 class="stats-banner__ttile mb-20">
-                      As one of the world's largest IT Service Providers, our
-                      deep pool of certified engineers and IT staff are ready to
-                      help you to keep business safe & ensure high availability.
-                    </h4>
-                    <a href="industries.html" class="btn btn__white btn__link">
-                      <span>Customers’ Stories</span>
-                      <i class="icon-arrow-right icon-outlined"></i>
-                    </a>
-                  </div>
+  <section class="contact-layout2 py-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="contact-panel d-flex flex-wrap">
+            <div class="stats-banner contact-panel__info d-flex flex-column justify-content-between">
+              <div class="bg-img">
+                <img src="@/assets/images/backgrounds/1.jpg" alt="banner" />
+              </div>
+              <div class="slick-carousel carousel-dots-light counters-light mb-40"
+                data-slick='{"slidesToShow": 1, "arrows": false, "dots": true, "speed": 700}'>
+                <div class="counter-item">
+                  <h4 ref="counter1" class="counter color-white">0</h4>
+                  <p class="counter__desc">
+                    Projects And Software Developed in 2021
+                  </p>
                 </div>
-                <!-- /.stats-banner-->
-                <form
-                  class="contact-panel__form"
-                  method="post"
-                  action="@/assets/php/contact.php"
-                  id="contactForm"
-                >
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <h4 class="contact-panel__title">Request A Quote</h4>
-                      <p class="contact-panel__desc mb-20">
-                        Our deep pool of certified engineers and IT staff are
-                        ready to help you to keep your IT business safe & ensure
-                        high availability.
-                      </p>
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-6">
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="Name"
-                          id="contact-name"
-                          name="contact-name"
-                          required
-                        />
-                      </div>
-                    </div>
-                    <!-- /.col-lg-6 -->
-                    <div class="col-sm-6 col-md-6 col-lg-6">
-                      <div class="form-group">
-                        <input
-                          type="email"
-                          class="form-control"
-                          placeholder="Email"
-                          id="contact-email"
-                          name="contact-email"
-                          required
-                        />
-                      </div>
-                    </div>
-                    <!-- /.col-lg-6 -->
-                    <div class="col-sm-6 col-md-6 col-lg-6">
-                      <div class="form-group">
-                        <select class="form-control">
-                          <option value="1">Inquiry</option>
-                          <option value="2">case study</option>
-                        </select>
-                      </div>
-                    </div>
-                    <!-- /.col-lg-6 -->
-                    <div class="col-sm-6 col-md-6 col-lg-6">
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="Phone"
-                          id="contact-Phone"
-                          name="contact-phone"
-                          required
-                        />
-                      </div>
-                    </div>
-                    <!-- /.col-lg-6 -->
-                    <div class="col-12">
-                      <div class="form-group">
-                        <textarea
-                          class="form-control"
-                          placeholder="Describe your inquirey!"
-                          id="contact-message"
-                          name="contact-message"
-                        ></textarea>
-                      </div>
-                      <button
-                        type="submit"
-                        class="btn btn__secondary btn__icon btn__xhight mt-10"
-                      >
-                        <span>Submit Request</span>
-                        <i class="icon-arrow-right"></i>
-                      </button>
-                      <div class="contact-result"></div>
-                    </div>
-                    <!-- /.col-lg-12 -->
-                  </div>
-                  <!-- /.row -->
-                </form>
-                <!-- /.contact-panel__form -->
+                <!-- /.counter-item -->
+                <div class="counter-item">
+                  <h4 ref="counter2" class="counter color-white">0</h4>
+                  <p class="counter__desc">
+                    Projects And Software Developed in 2021
+                  </p>
+                </div>
+
+                <!-- /.counter-item -->
+              </div>
+              <!-- /.slick-carousel -->
+              <div>
+                <h4 class="stats-banner__ttile mb-20">
+                  As one of the world's largest IT Service Providers, our
+                  deep pool of certified engineers and IT staff are ready to
+                  help you to keep business safe & ensure high availability.
+                </h4>
+                <a href="industries.html" class="btn btn__white btn__link">
+                  <span>Customers’ Stories</span>
+                  <i class="icon-arrow-right icon-outlined"></i>
+                </a>
               </div>
             </div>
-            <!-- /.col-lg-6 -->
+            <!-- /.stats-banner-->
+            <form class="contact-panel__form" method="post" action="@/assets/php/contact.php" id="contactForm">
+              <div class="row">
+                <div class="col-sm-12">
+                  <h4 class="contact-panel__title">Request A Quote</h4>
+                  <p class="contact-panel__desc mb-20">
+                    Our deep pool of certified engineers and IT staff are
+                    ready to help you to keep your IT business safe & ensure
+                    high availability.
+                  </p>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Name" id="contact-name" name="contact-name"
+                      required />
+                  </div>
+                </div>
+                <!-- /.col-lg-6 -->
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email" id="contact-email" name="contact-email"
+                      required />
+                  </div>
+                </div>
+                <!-- /.col-lg-6 -->
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                  <div class="form-group">
+                    <select class="form-control">
+                      <option value="1">Inquiry</option>
+                      <option value="2">case study</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- /.col-lg-6 -->
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Phone" id="contact-Phone" name="contact-phone"
+                      required />
+                  </div>
+                </div>
+                <!-- /.col-lg-6 -->
+                <div class="col-12">
+                  <div class="form-group">
+                    <textarea class="form-control" placeholder="Describe your inquirey!" id="contact-message"
+                      name="contact-message"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn__secondary btn__icon btn__xhight mt-10">
+                    <span>Submit Request</span>
+                    <i class="icon-arrow-right"></i>
+                  </button>
+                  <div class="contact-result"></div>
+                </div>
+                <!-- /.col-lg-12 -->
+              </div>
+              <!-- /.row -->
+            </form>
+            <!-- /.contact-panel__form -->
           </div>
-          <!-- /.row -->
         </div>
-        <!-- /.container -->
-      </section>
+        <!-- /.col-lg-6 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
 </template>
 
 <script setup>
-defineProps({
-  msg: String
-})
+import { ref, onMounted } from "vue";
+
+const counter1 = ref(null);
+const counter2 = ref(null);
+
+function animateCounter(el, target, duration = 2000) {
+  let start = 0;
+  let startTime = null;
+
+  function step(timestamp) {
+    if (!startTime) startTime = timestamp;
+    const progress = Math.min((timestamp - startTime) / duration, 1);
+    el.innerText = Math.floor(progress * target).toLocaleString();
+
+    if (progress < 1) {
+      requestAnimationFrame(step);
+    }
+  }
+  requestAnimationFrame(step);
+}
+
+onMounted(() => {
+  const options = {
+    threshold: 0.4,
+  };
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        if (entry.target === counter1.value) {
+          animateCounter(counter1.value, 6154, 2000);
+        }
+        if (entry.target === counter2.value) {
+          animateCounter(counter2.value, 6154, 2500);
+        }
+        obs.unobserve(entry.target);
+      }
+    });
+  }, options);
+
+  if (counter1.value) observer.observe(counter1.value);
+  if (counter2.value) observer.observe(counter2.value);
+});
 </script>
+
 
 
 

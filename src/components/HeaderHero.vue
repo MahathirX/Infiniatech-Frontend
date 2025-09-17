@@ -1,4 +1,5 @@
 <template>
+  
   <!-- ========================= Header =========================== -->
   <header class="header header-transparent header-full">
     <nav class="navbar navbar-expand-lg sticky-navbar">
@@ -42,25 +43,13 @@
         <div class="collapse navbar-collapse" id="mainNavigation">
           <ul class="navbar-nav ml-auto">
             <li class="nav__item has-dropdown ">
-              <!-- <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link active ">Home</a> -->
-              <router-link to="/"  data-toggle="dropdown" class="dropdown-toggle nav__item-link active">
+              <!-- <router-link to="/"  data-toggle="dropdown" class="dropdown-toggle nav__item-link active">
                 Home
-              </router-link>
-
-              <ul class="dropdown-menu">
-                <li class="nav__item">
-                  <a href="index.html" class="nav__item-link">Home Main</a>
-                </li>
-                <!-- /.nav-item -->
-                <li class="nav__item">
-                  <a href="home-modern.html" class="nav__item-link">Home Modern</a>
-                </li>
-                <!-- /.nav-item -->
-                <li class="nav__item">
-                  <a href="home-classic.html" class="nav__item-link">Home Classic</a>
-                </li>
-                <!-- /.nav-item -->
-              </ul>
+              </router-link> -->
+              <a href="/"  @click.prevent="goReload('/')" data-toggle="dropdown" class="dropdown-toggle nav__item-link active">
+                Home
+              </a>
+              
               <!-- /.dropdown-menu -->
             </li>
             <!-- /.nav-item -->
@@ -235,7 +224,11 @@
             <!-- /.nav-item -->
             <li class="nav__item">
               <!-- <a href="contact-us.html" class="nav__item-link">Contacts</a> -->
-               <router-link to="/contact" class="nav__item-link">Contacts</router-link>
+               <!-- <router-link to="/contact" class="nav__item-link">Contacts</router-link> -->
+                <a href="/contact" @click.prevent="goReload('/contact')" class="nav__item-link">
+    Contact
+  </a>
+                 
             </li>
             <!-- /.nav-item -->
           </ul>
@@ -387,10 +380,11 @@
   <!-- /.slider -->
 </template>
 
+
 <script setup>
-defineProps({
-  msg: String
-})
+function goReload(path) {
+  window.location.href = path // hard reload
+}
 </script>
 
 <style scoped>
