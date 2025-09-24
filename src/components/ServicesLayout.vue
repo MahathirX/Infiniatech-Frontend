@@ -181,7 +181,7 @@
               <p class="text__link mt-20 mb-0">
                 Working hard to earn our customers’ trust.
                 <a
-                  href="industries.html"
+                  href="/" @click.prevent="goReload('/')"
                   class="btn btn__secondary btn__link mx-1"
                 >
                   <span>Explore All Services</span>
@@ -197,9 +197,9 @@
 </template>
 
 <script setup>
-defineProps({
-  msg: String
-})
+function goReload(path) {
+  window.location.href = path // hard reload
+}
 </script>
 
 <style scoped>

@@ -72,12 +72,12 @@
             <div class="footer-widget__content">
               <nav>
                 <ul class="list-unstyled">
-                  <li><a href="about-us.html">About Us</a></li>
-                  <li><a href="leadership-team.html">Meet Our Team</a></li>
-                  <li><a href="blog.html">News & Media</a></li>
-                  <li><a href="projects-grid.html">Case Studies</a></li>
-                  <li><a href="contacs.html">Contacts</a></li>
-                  <li><a href="#">Investors</a></li>
+                  <li><a href="/">About Us</a></li>
+                  <li><a href="/">Meet Our Team</a></li>
+                  <li><a href="/">News & Media</a></li>
+                  <li><a href="/">Case Studies</a></li>
+                  <li><a href="/contact" @click.prevent="goReload('/contact')">Contacts</a></li>
+                  <li><a href="/">Investors</a></li>
                 </ul>
               </nav>
             </div>
@@ -89,12 +89,12 @@
             <div class="footer-widget__content">
               <nav>
                 <ul class="list-unstyled">
-                  <li><a href="#">IT Management</a></li>
-                  <li><a href="#">Cyber Security</a></li>
-                  <li><a href="#">Cloud Computing</a></li>
-                  <li><a href="#">IT Consulting</a></li>
-                  <li><a href="#">Software Dev</a></li>
-                  <li><a href="#">IT Support</a></li>
+                  <li><a href="/">IT Management</a></li>
+                  <li><a href="/">Cyber Security</a></li>
+                  <li><a href="/">Cloud Computing</a></li>
+                  <li><a href="/">IT Consulting</a></li>
+                  <li><a href="/">Software Dev</a></li>
+                  <li><a href="/">IT Support</a></li>
                 </ul>
               </nav>
             </div>
@@ -106,10 +106,10 @@
             <div class="footer-widget__content">
               <nav>
                 <ul class="list-unstyled">
-                  <li><a href="pricing.html">Pricing and plans</a></li>
-                  <li><a href="#">Terms of Service</a></li>
-                  <li><a href="faqs.html">Help & FAQ</a></li>
-                  <li><a href="contacs.html">Contact Us</a></li>
+                  <!-- <li><a href="">Pricing and plans</a></li> -->
+                  <li><a href="/">Terms of Service</a></li>
+                  <li><a href="/">Help & FAQ</a></li>
+                  <!-- <li><a href="contacs.html">Contact Us</a></li> -->
                   <li><a href="#">Site map</a></li>
                 </ul>
               </nav>
@@ -138,8 +138,8 @@
       <!-- /.footer-primary -->
       <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-12 text-center pb-40">
-          <span class="fz-14 text-white">&copy; 2025 Infinatech, All Rights Reserved. With Love by-</span>
-          <a class="fz-14 color-primary" href="#">Infiniatech</a>
+          <span class="fz-14 text-white">&copy; 2025 Infiniatech, All Rights Reserved. With Love by-</span>
+          <a class="fz-14 color-primary" href="https://infiniatechltd.com">Infiniatechltd.com</a>
         </div>
         <!-- /.col-lg-12 -->
       </div>
@@ -148,7 +148,6 @@
     <!-- /.container -->
   </footer>
 </template>
-
 
 <script>
 import { toast } from "vue3-toastify"; // optional, 
@@ -208,6 +207,12 @@ export default {
       }
     }
   }
+}
+</script>
+
+<script setup>
+function goReload(path) {
+  window.location.href = path // hard reload
 }
 </script>
 
